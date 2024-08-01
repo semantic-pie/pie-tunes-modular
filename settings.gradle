@@ -1,0 +1,13 @@
+rootProject.name = 'pie-tunes-modular'
+include 'application'
+include 'metadata:metadata-core'
+findProject(':metadata:metadata-core')?.name = 'metadata-core'
+include 'metadata:metadata-microservice'
+findProject(':metadata:metadata-microservice')?.name = 'metadata-microservice'
+include 'streaming:streaming-microservice'
+findProject(':streaming:streaming-microservice')?.name = 'streaming-microservice'
+include 'streaming:streaming-core'
+findProject(':streaming:streaming-core')?.name = 'streaming-core'
+include 'shared:pietunes-spi-adapter-minio'
+findProject(':shared:pietunes-spi-adapter-minio')?.name = 'pietunes-spi-adapter-minio'
+

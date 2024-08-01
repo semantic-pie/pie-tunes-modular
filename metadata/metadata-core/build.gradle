@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.2'
+    id("io.spring.dependency-management") version "1.1.6"
+}
+
+group = 'io.github.semanticpie.pietunes.metadata.core'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+ext {
+    set('jjwtVersion', "0.11.5")
+}
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-neo4j'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'com.mpatric:mp3agic:0.9.1'
+    implementation 'org:jaudiotagger:2.0.3'
+    implementation 'org.mapstruct:mapstruct:1.4.2.Final'
+
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
+    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'io.r2dbc:r2dbc-h2'
+    implementation "io.jsonwebtoken:jjwt-api:${jjwtVersion}"
+    implementation "io.jsonwebtoken:jjwt-gson:${jjwtVersion}"
+    runtimeOnly "io.jsonwebtoken:jjwt-impl:${jjwtVersion}"
+
+    implementation 'org.springdoc:springdoc-openapi-starter-webflux-ui:2.4.0'
+    implementation 'org.springdoc:springdoc-openapi-starter-webflux-api:2.4.0'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+
+    implementation project(":shared:pietunes-spi-adapter-minio")
+    implementation ("io.minio:minio:8.5.11")
+}
+
+
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

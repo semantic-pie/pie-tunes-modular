@@ -1,0 +1,9 @@
+subprojects{
+    apply plugin: "java"
+
+    compileJava {
+        sourceCompatibility = "17"
+        targetCompatibility = "17"
+    }
+
+}

@@ -1,0 +1,7 @@
+package io.github.semanticpie.pietunes.metadata.core.services.exceptions;
+
+public class UserAlreadyExistsException extends RuntimeException {
+    public UserAlreadyExistsException(String message) {
+        super(message);
+    }
+}
