@@ -16,4 +16,8 @@ include 'metadata:metadata-api-adapter-spring-webflux'
 findProject(':metadata:metadata-api-adapter-spring-webflux')?.name = 'metadata-api-adapter-spring-webflux'
 include 'shared:pietunes-jwt-token-provider'
 findProject(':shared:pietunes-jwt-token-provider')?.name = 'pietunes-jwt-token-provider'
+include 'authorization'
+include 'uploader'
+include 'shared:pietunes-shared-exceptions'
+findProject(':shared:pietunes-shared-exceptions')?.name = 'pietunes-shared-exceptions'
 

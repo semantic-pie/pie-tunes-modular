@@ -16,6 +16,8 @@ dependencies {
     implementation(project(":metadata:metadata-core"))
     implementation(project(":metadata:metadata-api-adapter-spring-webflux"))
     implementation(project(":streaming:streaming-core"))
+    implementation(project(":authorization"))
+    implementation(project(":uploader"))
 }
 
 test {

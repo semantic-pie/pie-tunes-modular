@@ -35,6 +35,15 @@ public class MusicTrack {
 
     private Long lengthInMilliseconds;
 
+    public MusicTrack(UUID uuid, String title, String releaseYear, Integer bitrate,
+        Long lengthInMilliseconds) {
+        this.uuid = uuid;
+        this.title = title;
+        this.releaseYear = releaseYear;
+        this.bitrate = bitrate;
+        this.lengthInMilliseconds = lengthInMilliseconds;
+    }
+
     @Relationship(type = "IN_GENRE", direction = Relationship.Direction.OUTGOING)
     private Set<MusicGenre> genres;
 

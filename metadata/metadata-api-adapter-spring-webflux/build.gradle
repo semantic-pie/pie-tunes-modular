@@ -22,4 +22,5 @@ dependencies {
 
     implementation(project(":metadata:metadata-api"))
     implementation(project(":shared:pietunes-jwt-token-provider"))
+    implementation(project(":shared:pietunes-shared-exceptions"))
 }

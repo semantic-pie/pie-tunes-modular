@@ -43,4 +43,11 @@ public class MusicAlbum {
     @Relationship(type = "HAS_ALBUM", direction = Relationship.Direction.INCOMING)
     @JsonProperty("band")
     private MusicBand musicBand;
+
+    public MusicAlbum(UUID id, String name, @Nullable String description, int yearOfRecord) {
+        this.uuid = id;
+        this.name = name;
+        this.description = description;
+        this.yearOfRecord = yearOfRecord;
+    }
 }

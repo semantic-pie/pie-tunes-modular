@@ -36,4 +36,10 @@ public class MusicBand {
     @Relationship(type = "HAS_ALBUM", direction = Relationship.Direction.OUTGOING)
     private Set<MusicAlbum> albums;
 
+    public MusicBand(UUID uuid, String name, @Nullable String description) {
+        this.uuid = uuid;
+        this.name = name;
+        this.description = description;
+    }
+
 }
