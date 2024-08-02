@@ -1,7 +1,7 @@
 package io.github.semanticpie.pietunes.metadata.core.models.dtos;
 
 
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.MusicTrackDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.MusicTrackDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

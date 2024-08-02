@@ -11,9 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/application" />
             <option value="$PROJECT_DIR$/metadata" />
+            <option value="$PROJECT_DIR$/metadata/metadata-api" />
+            <option value="$PROJECT_DIR$/metadata/metadata-api-adapter-spring-webflux" />
             <option value="$PROJECT_DIR$/metadata/metadata-core" />
             <option value="$PROJECT_DIR$/metadata/metadata-microservice" />
             <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/pietunes-jwt-token-provider" />
             <option value="$PROJECT_DIR$/shared/pietunes-spi-adapter-minio" />
             <option value="$PROJECT_DIR$/streaming" />
             <option value="$PROJECT_DIR$/streaming/streaming-core" />

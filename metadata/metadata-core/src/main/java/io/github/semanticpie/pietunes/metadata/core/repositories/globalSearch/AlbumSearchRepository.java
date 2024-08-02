@@ -1,6 +1,6 @@
 package io.github.semanticpie.pietunes.metadata.core.repositories.globalSearch;
 
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.MusicAlbumDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.MusicAlbumDto;
 import java.util.UUID;
 import org.springframework.data.neo4j.repository.ReactiveNeo4jRepository;
 import org.springframework.data.neo4j.repository.query.Query;

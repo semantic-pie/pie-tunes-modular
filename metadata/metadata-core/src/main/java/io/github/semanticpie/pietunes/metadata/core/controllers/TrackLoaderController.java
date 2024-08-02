@@ -1,7 +1,7 @@
 package io.github.semanticpie.pietunes.metadata.core.controllers;
 
 import io.github.semanticpie.pietunes.metadata.core.models.dtos.TrackLoaderResponseDto;
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.MusicTrackDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.MusicTrackDto;
 import io.github.semanticpie.pietunes.metadata.core.models.mappers.DomainEntityMapper;
 import io.github.semanticpie.pietunes.metadata.core.services.TrackLoaderService;
 import io.swagger.v3.oas.annotations.Operation;

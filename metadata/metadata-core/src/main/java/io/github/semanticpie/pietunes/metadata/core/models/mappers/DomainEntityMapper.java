@@ -1,14 +1,14 @@
 package io.github.semanticpie.pietunes.metadata.core.models.mappers;
 
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.MusicAlbumDto;
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.MusicTrackDto;
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.inner.InnerAlbumDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.MusicAlbumDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.MusicTrackDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.inner.InnerAlbumDto;
 import io.github.semanticpie.pietunes.metadata.core.models.MusicAlbum;
 import io.github.semanticpie.pietunes.metadata.core.models.MusicBand;
 import io.github.semanticpie.pietunes.metadata.core.models.MusicTrack;
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.MusicBandDto;
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.inner.InnerBandDto;
-import io.github.semanticpie.pietunes.metadata.core.models.dtos.domain.inner.InnerTrackDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.MusicBandDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.inner.InnerBandDto;
+import io.github.semanticpie.pietunes.metadata.api.model.dto.entity.inner.InnerTrackDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;

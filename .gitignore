@@ -47,3 +47,9 @@ data/
 db/storage
 db/export
 
+streaming/src
+metadata/src
+src
+shared/src
+
+

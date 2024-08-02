@@ -1,10 +1,10 @@
 package io.github.semanticpie.pietunes.metadata.core.controllers;
 
+import io.github.semanticpie.pietunes.jwt.token.provider.JwtTokenProvider;
+import io.github.semanticpie.pietunes.metadata.core.config.JwtFilterRequest;
 import io.github.semanticpie.pietunes.metadata.core.models.JwtResponse;
 import io.github.semanticpie.pietunes.metadata.core.models.dtos.UserDto;
 import io.github.semanticpie.pietunes.metadata.core.services.UserService;
-import io.github.semanticpie.pietunes.metadata.core.services.jwt.JwtTokenProvider;
-import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import java.util.Set;
 import java.util.UUID;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
-
+import io.jsonwebtoken.Claims;
 
 @RestController
 @AllArgsConstructor
